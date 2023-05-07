@@ -8,7 +8,7 @@ import {test} from './test'
 
 const app = express();
 app.use(logger);
-app.use(express.json()); // parse incoming JSON requests
+app.use(express.json()); 
 
 
 app.get('/items', async (req, res, next) => {
