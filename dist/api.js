@@ -88,7 +88,7 @@ app.post('/logout', authenticate_1.authenticate, async (req, res, next) => {
         next(error);
     }
 });
-//app.use(authenticate_1.errorHandler);
+app.use(authenticate_1.errorHandler);
 app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
